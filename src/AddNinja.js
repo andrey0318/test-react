@@ -8,11 +8,7 @@ class AddNinja extends Component {
         belt: null
     }
     handleChange = (e) => {
-        this.setState({
-            [e.target.id]: e.target.value
-        })
-    }
-    handleSubmit = (e) => {
+  > {
         e.preventDefault();
         this.props.addNinja(this.state);
     }
